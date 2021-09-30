@@ -45,7 +45,7 @@ function MetodoGauss() {
                handlerRespostas(responder);
             }}
          >  
-            <p>*Esse função tem um exemplo ja proposto e checado</p>
+            <p>*Essa função tem um exemplo ja proposto e checado</p>
             <div className='flex flex-row'>
                <div className="p-2 ">
                   {input.map((val, index) => {

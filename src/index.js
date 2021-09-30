@@ -4,6 +4,8 @@ import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 
+document.title = "Algebra Linear"
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
