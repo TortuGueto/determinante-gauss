@@ -9,13 +9,13 @@ interface ArrayValores {
 }
 
 function Determinante2() {
-   const [responder, setResponder] = useState(false)
    const [valores, setValores] = useState<ArrayValores[]>([
       { id: "1", valor: 0 },
       { id: "2", valor: 0 },
       { id: "3", valor: 0 },
       { id: "4", valor: 0 }
    ])
+   const [responder, setResponder] = useState(false)
 
 
    function handlerRespostas(res:boolean) {
