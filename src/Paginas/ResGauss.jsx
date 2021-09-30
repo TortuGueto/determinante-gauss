@@ -1,5 +1,3 @@
-import React from "react";
-import { generate } from "shortid";
 
 function ResGauss({ a, b }) {
    return (

@@ -68,13 +68,14 @@ function MetodoGauss() {
                   })}
                </div>
                <div className="grid grid-cols-1 p-1 m-1 flex flex-col border-l  border-left border-gray-500">
-                  {amostraB.map((val) => {
+                  {amostraB.map((val,index) => {
                      return (
                         <input
                            className="w-auto m-2 p-2 bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg active:outline-none"
                            defaultValue={val}
                            type="number"
-                        ></input>
+                           key={index}
+                        />
                      );
                   })}
                </div>
