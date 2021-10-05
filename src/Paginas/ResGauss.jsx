@@ -2,8 +2,8 @@
 function ResGauss({ a, b }) {
    return (
       <div className="dark:bg-gray-600 rounded-xl justify-around shadow-xl mb-10">
-         <div className='flex flex-col'>
-         <h3 className='pt-2'>Resolvido</h3>
+         <div className='flex flex-col items-center'>
+         <h3 className='w-2/12 pt-2 border-b-2 border-gray-400'>Resolvido</h3>
          <div className="flex flex-row px-2">
             <div className="flex flex-row w-full m-1 border-gray-500">
                {a.map((val, index) => {
@@ -12,7 +12,7 @@ function ResGauss({ a, b }) {
                         {val.map((inside, index) => {
                            return (
                               <p
-                                 className="w-10/12 m-4 p-2 bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg outline-none"
+                                 className="w-10/12 m-4 p-2 dark:bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg outline-none"
                                  key={index}
                               >
                                  {inside}
@@ -27,7 +27,7 @@ function ResGauss({ a, b }) {
                {b.map((val, index) => {
                   return (
                      <p
-                        className="w-full m-2 p-2 bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg outline-none overflow-hidden font-bold"
+                        className="w-full m-2 p-2 dark:bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg outline-none overflow-hidden font-bold"
                         type="number"
                         key={index}
                      >
@@ -37,8 +37,8 @@ function ResGauss({ a, b }) {
                })}
             </div>
          </div>
-         <div className="flex flex-row justify-around bg-gray-600 items-center pt-4 px-20 rounded-xl shadow-xl font-bold ">
-            <div className="p-2 bg-gray-500 rounded-2xl w-5/12 ">
+         <div className="flex flex-row justify-around dark:bg-gray-600 items-center pt-4 px-20 rounded-xl dark:shadow-xl shadow-md font-bold ">
+            <div className="p-2 dark:bg-gray-500 rounded-2xl w-5/12 ">
                <p className="p-2">Resposta do programa</p>
                {b.map((val, index) => {
                   console.log(val);
@@ -52,12 +52,12 @@ function ResGauss({ a, b }) {
                   );
                })}
             </div>
-            <div className="p-3 bg-gray-500 rounded-2xl flex flex-col items-center w-5/12 ">
+            <div className="p-3 dark:bg-gray-500 rounded-2xl flex flex-col items-center w-5/12 ">
                <p className="p-2">Solução checada</p>
-               <p className="m-1 bg-gray-400 w-full rounded-xl p-1">-0,5</p>
-               <p className="m-1 bg-gray-400 w-full rounded-xl p-1">1</p>
-               <p className="m-1 bg-gray-400 w-full rounded-xl p-1">0,3333</p>
-               <p className="m-1 bg-gray-400 w-full rounded-xl p-1">-2</p>
+               <p className="m-1 dark:bg-gray-400 bg-gray-200 w-full rounded-xl p-1">-0,5</p>
+               <p className="m-1 dark:bg-gray-400 bg-gray-200 w-full rounded-xl p-1">1</p>
+               <p className="m-1 dark:bg-gray-400 bg-gray-200 w-full rounded-xl p-1">0,3333</p>
+               <p className="m-1 dark:bg-gray-400 bg-gray-200 w-full rounded-xl p-1">-2</p>
             </div>
          </div>
       </div>

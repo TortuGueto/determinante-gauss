@@ -7,14 +7,14 @@ function Resolucao3(val) {
    const b = (linha[1]*linha[5]*linha[6])
    const c = (linha[2]*linha[3]*linha[7])
 
-   const x = -1*(linha[2]*linha[4]*linha[6])
-   const y = -1*(linha[0]*linha[5]*linha[7]) 
-   const z = -1*(linha[1]*linha[3]*linha[8])
+   const x = (linha[2]*linha[4]*linha[6])
+   const y = (linha[0]*linha[5]*linha[7]) 
+   const z = (linha[1]*linha[3]*linha[8])
 
 
    return (
       <>
-         <div className="flex flex-row justify-around p-2 my-3 shadow-md rounded-3xl m-1 dark:bg-gray-500">
+         <div className="flex flex-row justify-around p-2 my-3 shadow-md rounded-3xl m-1 dark:bg-gray-500 bg-white">
             <div 
                className='flex flex-row flex-wrap w-full justify-around'
             >
@@ -47,14 +47,14 @@ function Resolucao3(val) {
                })}
             </div>
          </div>
-         <div className='flex flex-row flex-grow justify-between items-center my-3 shadow-lg rounded-full m-1 ring-2 ring-yellow-400 mt-10 pl-4 dark:bg-gray-400 font-medium'>
+         <div className='flex flex-row flex-grow justify-between items-center my-3 shadow-lg rounded-full m-1 ring-2 ring-yellow-400 mt-10 pl-4 dark:bg-gray-400 bg-white font-medium'>
                <p className='p-3' >{a}</p><p className='p-2'>+</p>
                <p className='p-3' >{b}</p><p className='p-2'>+</p>
                <p className='p-3' >{c}</p><p className='p-2'>-</p><p className='p-3'>(</p>
                <p className='p-3' >{x}</p><p className='p-2'>+</p>
                <p className='p-3' >{y}</p><p className='p-2'>+ </p>
                <p className='p-3' >{z}</p><p className='p-2'>)</p>
-               <p className='rounded-full bg-yellow-400 p-3 font-medium ' >Determinante = {a+b+c+x+y+z}</p>
+               <p className='rounded-full bg-yellow-400 p-3 font-medium ' >Determinante = {a+b+c-x-y-z}</p>
          </div>
       </>
    );

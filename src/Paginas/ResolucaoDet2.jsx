@@ -10,7 +10,7 @@ function Resolucao2(val) {
 
    return (
       <>
-         <div className='flex flex-row flex flex-row flex-grow justify-between items-center my-3 shadow-lg rounded-full m-1 ring-2 ring-yellow-400 mt-10 pl-4 dark:bg-gray-400 font-medium'>
+         <div className='flex flex-row flex flex-row flex-grow justify-between items-center my-3 shadow-lg rounded-full m-1 ring-2 ring-yellow-400 mt-10 pl-4 dark:bg-gray-400 bg-white font-medium'>
                <p className='p-3' >{a}</p><p className='p-2'>*</p>
                <p className='p-3' >{y}</p>
                <p className='p-2'>-</p><p className='p-3'>(</p>

@@ -1,48 +1,60 @@
-import { useState } from "react";
-import { produce } from "immer"
-import Resolucao2 from './ResolucaoDet2'
-
+import React, { useState } from "react";
+import { produce } from "immer";
+import ResolucaoDet4 from "./ResolucaoDet4.jsx";
 
 interface ArrayValores {
    id: String;
    valor: Number;
 }
 
-function Determinante2() {
+function Determinante4() {
+   const [responder, setResponder] = useState(false);
    const [valores, setValores] = useState<ArrayValores[]>([
       { id: "1", valor: 0 },
       { id: "2", valor: 0 },
       { id: "3", valor: 0 },
-      { id: "4", valor: 0 }
-   ])
-   const [responder, setResponder] = useState(false)
+      { id: "4", valor: 0 },
+      { id: "5", valor: 0 },
+      { id: "6", valor: 0 },
+      { id: "7", valor: 0 },
+      { id: "8", valor: 0 },
+      { id: "9", valor: 0 },
+      { id: "10", valor: 0 },
+      { id: "11", valor: 0 },
+      { id: "12", valor: 0 },
+      { id: "13", valor: 0 },
+      { id: "14", valor: 0 },
+      { id: "15", valor: 0 },
+      { id: "16", valor: 0 },
+   ]);
 
-
-   function handlerRespostas(res:boolean) {
-      if(res === true){return(
-         <Resolucao2 valores={valores}/>
-      )} else {
-         return(
-            <></>
-         )
+   function handlerRespostas(res: boolean) {
+      if (res === true) {
+         return (
+            <div className='text-white'>
+               <ResolucaoDet4 valores={valores} />
+            </div>
+         );
+      } else {
+         return <></>;
       }
    }
 
-   return(
-      <div className="text-gray-700 flex flex-col p-2 items-center transition-all">
+   return (
+      <div className="text-gray-700 h-5/12 flex flex-col p-2 items-center mt-4">
          <form
-            className='flex flex-col items-center'
+            className="flex flex-col w-7/12 items-center"
             onSubmit={(e) => {
-               e.preventDefault()
-               setResponder(true)
-               handlerRespostas(responder)
+               e.preventDefault();
+               setResponder(true);
+               handlerRespostas(responder);
             }}
          >
-            <div className="grid grid-cols-2 w-full shadow-md p-5 px-7 rounded-3xl gap-1 m-2 dark:bg-gray-500 bg-white">
+            <div className="grid grid-cols-4 dark:bg-gray-500 bg-white w-full shadow-lg p-5 px-7 rounded-3xl gap-1 m-2">
                {valores.map((p, index) => {
                   return (
                      <div
-                        className="flex flex-row justify-around rounded-xl w-full "
+                        className="flex flex-row dark:bg-gray-600 bg-gray-100 p-1 justify-around items-center rounded-xl w-full "
                         key={Number(p.id)}
                      >
                         <input
@@ -63,23 +75,20 @@ function Determinante2() {
                            value={String(p.valor)}
                            placeholder="first name"
                         />
-                        
                      </div>
                   );
                })}
             </div>
             <button
-               className="rounded-full bg-green-300 ring-2 ring-green-500 p-2 px-6 m-1 hover:shadow-lg transition-all shadow-lg hover:shadow-xl font-medium"
+               className="rounded-full bg-green-300 ring-2 ring-green-500 p-2 px-6 m-1 mt-6 hover:shadow-lg transition-all shadow-lg hover:shadow-xl font-medium"
                type="submit"
             >
                Enviar
             </button>
          </form>
-         <>
-            {handlerRespostas(responder)}
-         </>
+         <div className="w-7/12">{handlerRespostas(responder)}</div>
       </div>
-   )
+   );
 }
 
-export default Determinante2
+export default Determinante4;

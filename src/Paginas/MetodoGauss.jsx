@@ -38,7 +38,7 @@ function MetodoGauss() {
    return (
       <div className="px-24 text-gray-800 m-4 mt-6 max-h-60 dark:text-white">
          <form
-            className="flex flex-col dark:bg-gray-600 p-2 rounded-xl items-center shadow-xl"
+            className="flex flex-col dark:bg-gray-600 bg-white p-2 rounded-3xl items-center shadow-md"
             onSubmit={(e) => {
                e.preventDefault();
                setResponder(true);
@@ -57,7 +57,7 @@ function MetodoGauss() {
                            {val.map((inside, index) => {
                               return (
                                  <input
-                                    className="w-auto m-2 p-2 bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg outline-none"
+                                    className="w-auto m-2 p-2 dark:bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg outline-none"
                                     defaultValue={inside}
                                     key={index}
                                  ></input>
@@ -71,7 +71,7 @@ function MetodoGauss() {
                   {amostraB.map((val,index) => {
                      return (
                         <input
-                           className="w-auto m-2 p-2 bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg active:outline-none"
+                           className="w-auto m-2 p-2 dark:bg-gray-500 w-10 ring-2 ring-yellow-400 rounded-lg active:outline-none"
                            defaultValue={val}
                            type="number"
                            key={index}
@@ -87,7 +87,7 @@ function MetodoGauss() {
                Enviar
             </button>
          </form>
-         <div className='bg-gray-700 mt-6 mb-6'>
+         <div className='dark:bg-gray-700 bg-white rounded-3xl mt-6 mb-6'>
             {handlerRespostas(responder)}
          </div>
       </div>

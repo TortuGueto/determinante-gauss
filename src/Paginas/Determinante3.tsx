@@ -43,7 +43,7 @@ function Determinante3() {
                handlerRespostas(responder)
             }}
          >
-            <div className="grid grid-cols-3 dark:bg-gray-500 w-full shadow-lg p-5 px-7 rounded-3xl gap-1 m-2">
+            <div className="grid grid-cols-3 dark:bg-gray-500 bg-white w-full shadow-lg p-5 px-7 rounded-3xl gap-1 m-2">
                {valores.map((p, index) => {
                   return (
                      <div
