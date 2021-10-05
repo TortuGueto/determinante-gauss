@@ -17,7 +17,7 @@ function ResolucaoDet4(valores) {
    }, [])
 
    return (
-      <div className="my-6 flex flex-col rounded-3xl shadow-xl dark:bg-gray-600 bg-white py-4">
+      <div className="my-6 flex flex-col rounded-3xl shadow-xl dark:bg-gray-600 dark:text-gray-200 text-gray-700 bg-white py-4">
          <p>Utilizando a 1ª linha temos:</p>
          <div className="flex flex-row ">
             <div className="w-8/12 p-2">
@@ -28,7 +28,7 @@ function ResolucaoDet4(valores) {
                         key={index}
                         id={index * index}
                      >
-                        <div className="w-8/12 grid grid-cols-3 gap-1 p-2 m-2 bg-gray-500 rounded-xl">
+                        <div className="w-8/12 grid grid-cols-3 gap-1 p-2 m-2 dark:bg-gray-500 bg-gray-100 rounded-xl">
                            {matriz.map((val, index) => {
                               return (
                                  <p

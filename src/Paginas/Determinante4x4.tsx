@@ -58,7 +58,7 @@ function Determinante4() {
                         key={Number(p.id)}
                      >
                         <input
-                           className="dark:bg-yellow-200 dark:shadow-xl shadow-md bg-yellow-100 rounded-xl w-10/12 p-2 m-2 ring-yellow-400 focus:ring outline-none focus:outline-none focus:shadow-lg"
+                           className="dark:bg-yellow-200 dark:shadow-xl shadow-md bg-yellow-100 rounded-xl w-10/12 p-2 m-2 ring-yellow-400 focus:ring outline-none focus:outline-none focus:shadow-xl hover:shadow-xl hover:ring-2 hotransition-all easy-out duration-200"
                            onChange={(e) => {
                               if (Number(e.target.value) > 100)
                                  e.target.value = "100";

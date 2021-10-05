@@ -17,17 +17,17 @@ function NavBar() {
                   onClick={()=>{handlerDropDown()}} />
                <div className="mt-2 flex flex-row absolute bg-gray-100 dark:bg-gray-500 border-2 border-green-400 rounded-xl shadow-xl active:outline-none text-black dark:text-white">
                   <Link to="/determinante2x2" onClick={()=>{handlerDropDown()}}>
-                     <p className="transition easy-in duration-200 m-2 p-2 rounded-xl border-opacity-0 border-2 border-yellow-400 hover:shadow-xl hover:border-opacity-100 hover:bg-yellow-500 hover:bg-opacity-40 ">
+                     <p className="transition easy-in duration-200 m-2 p-2 rounded-xl border-opacity-0 border-2 border-yellow-400 hover:shadow-xl hover:border-opacity-100 hover:bg-yellow-300 hover:bg-opacity-40 ">
                         Determinante 2 x 2
                      </p>
                   </Link>
                   <Link to="/determinante3x3" onClick={()=>{handlerDropDown()}}>
-                     <p className="transition easy-in duration-200 m-2 p-2 rounded-xl border-opacity-0 border-2 border-yellow-400 hover:shadow-xl hover:border-opacity-100 hover:bg-yellow-500 hover:bg-opacity-40 ">
+                     <p className="transition easy-in duration-200 m-2 p-2 rounded-xl border-opacity-0 border-2 border-yellow-400 hover:shadow-xl hover:border-opacity-100 hover:bg-yellow-300 hover:bg-opacity-40 ">
                         Determinante 3 x 3
                      </p>
                   </Link>
                   <Link to="/determinante4x4" onClick={()=>{handlerDropDown()}}>
-                     <p className="transition easy-in duration-200 m-2 p-2 rounded-xl border-opacity-0 border-2 border-yellow-400 hover:shadow-xl hover:border-opacity-100 hover:bg-yellow-500 hover:bg-opacity-40 ">
+                     <p className="transition easy-in duration-200 m-2 p-2 rounded-xl border-opacity-0 border-2 border-yellow-400 hover:shadow-xl hover:border-opacity-100 hover:bg-yellow-300 hover:bg-opacity-40 ">
                         Determinante 4 x 4
                      </p>
                   </Link>

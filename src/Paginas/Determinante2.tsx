@@ -29,7 +29,7 @@ function Determinante2() {
    }
 
    return(
-      <div className="text-gray-700 flex flex-col p-2 items-center transition-all">
+      <div className="text-gray-700 flex flex-col p-2 items-center transition-all mt-6">
          <form
             className='flex flex-col items-center'
             onSubmit={(e) => {
@@ -46,7 +46,7 @@ function Determinante2() {
                         key={Number(p.id)}
                      >
                         <input
-                           className="dark:bg-yellow-200 dark:shadow-xl shadow-md bg-yellow-100 rounded-xl w-10/12 p-2 m-2 ring-yellow-400 focus:ring outline-none focus:outline-none focus:shadow-lg"
+                           className="dark:bg-yellow-200 dark:shadow-xl shadow-md bg-yellow-100 rounded-xl w-10/12 p-2 m-2 ring-yellow-400 focus:ring outline-none focus:outline-none focus:shadow-xl hover:shadow-xl hover:ring-2 hotransition-all easy-out duration-200"
                            onChange={(e) => {
                               if (Number(e.target.value) > 100)
                                  e.target.value = "100";
@@ -69,7 +69,7 @@ function Determinante2() {
                })}
             </div>
             <button
-               className="rounded-full bg-green-300 ring-2 ring-green-500 p-2 px-6 m-1 hover:shadow-lg transition-all shadow-lg hover:shadow-xl font-medium"
+               className="rounded-full bg-green-300 ring-2 ring-green-500 p-2 px-6 my-6 hover:shadow-lg transition-all shadow-lg hover:shadow-xl font-medium"
                type="submit"
             >
                Enviar
