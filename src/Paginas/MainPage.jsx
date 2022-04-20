@@ -7,7 +7,7 @@ function MainPage() {
          <div className="flex flex-col items-center w-7/12 ">
             <h2 className="dark:text-gray-100 text-gray-800 ring-1 w-8/12 dark:bg-gray-600 rounded-xl shadow-lg ring-gray-500 p-2 m-1 text-xl">
                Esse site tem como objetivo realizar automaticamente as operações
-               de Determinante e Eliminassão Gaussaniana (ou eliminação de
+               de Determinante e Eliminassão Gaussiana (ou eliminação de
                Gauss).
             </h2>
             <p className="dark:text-gray-100 text-gray-800 p-2 m-1 text-base pointer-events-none select-none">
